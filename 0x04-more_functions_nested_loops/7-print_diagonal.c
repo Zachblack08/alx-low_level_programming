@@ -11,6 +11,7 @@
 void print_diagonal(int n)
 {
 	int count = 0, size;
+
 	if (n > 0)
 	{
 		while (count < n)

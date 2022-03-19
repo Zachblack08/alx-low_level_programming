@@ -1,6 +1,6 @@
 #include "mian.h"
 /**
- * print_linr - print a line
+ * print_line - print a line
  * @n: numbers of straight lines
  * Return: Always 0.
  */

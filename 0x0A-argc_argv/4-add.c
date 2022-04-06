@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype..h>
+#include <ctype.h>
 
 /**
  * _isnumber - checks if string is a number
@@ -29,7 +29,7 @@ int _isnumber(char *s)
 	return (check);
 }
 /**
- * main - Entry point 
+ * main - Entry point
  *
  * @argc: Counts the number of parameters that go into main
  * @argv: Pointer of array of pointers containing strings entering main
@@ -39,8 +39,8 @@ int main(int argc, char **argv)
 {
 	int i, n, ex;
 
-	ex = 0, n = 0;
-	if (argc > 1)
+	ex = 0, n =0;
+	if (argc >1)
 	{
 		for (i = 1; i < argc; i++)
 		{

@@ -33,26 +33,26 @@ int _isnumber(char *s)
  *
  * @argc: Counts the number of parameters that go into main
  * @argv: Pointer of array of pointers containing strings entering main
- * Return: Always 0 (Success)
+ * Return: Always 0 (success)
  */
 int main(int argc, char **argv)
 {
-	int i, n. ex;
+		int i, n, ex;
 
-	ex = 0, n = 0;
-	if (argc > 1)
-	{
-		for (i = 1; i < argc; i++)
+		ex = 0, n = 0;
+		if (argc > 1)
 		{
-			if (_isnumber(argv[i]))
-				n += atoi(argv[i]);
-			else
-				ex = 1;
+			for (i = 1; i < argc; i++)
+			{
+				if (_isnumber(argv[i]))
+					n += atoi(argv[i]);
+				else
+					ex = 1;
+			}
 		}
-	}
-	if (ex == 0)
-		printf("%i\n", n);
-	else
-		printf("%s\n", "Error");
-	return (ex);
+		if (ex == 0)
+			printf("%i\n", n);
+		else
+			printf("%s\n", "Error");
+		return (ex);
 }

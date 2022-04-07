@@ -15,9 +15,8 @@ int _isnumber(char *s)
 	int i, check, d;
 
 	i = 0, d = 0, check = 1;
-
 	if (*s == '-')
-		i++;
+	i++;
 	for (; *(s + i) != 0; i++)
 	{
 		d = isdigit(*(s + i));
@@ -39,9 +38,8 @@ int _isnumber(char *s)
 int main(int argc, char **argv)
 {
 	int i, n, ex;
-
+	
 	ex = 0, n =0;
-
 	if (argc >1)
 	{
 		for (i = 1; i < argc; i++)

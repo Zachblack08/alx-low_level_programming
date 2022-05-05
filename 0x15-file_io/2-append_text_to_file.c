@@ -3,13 +3,13 @@
 /**
  * append_text_to_file - this appends text at the end of a file
  * @filename: the filename.
- * @text_content: the added content.
- * Return: 1 if the file exits. -1 if the file does not exist
- * or if it fails.
+ *  @text_content: the added content.
+ *
+ *  Return: 1 if the file exists. -1 if the file does not exist
+ *  or if it fails.
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-
 	int fd;
 	int nletters;
 	int rwr;
@@ -33,7 +33,7 @@ int append_text_to_file(const char *filename, char *text_content)
 			return (-1);
 	}
 
-	closed(fd);
+	close(fd);
 
 	return (1);
 }
